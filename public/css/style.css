@@ -1,0 +1,740 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 255, 191, 0.26), rgba(0, 255, 191, 0.26)), url('../immage/backimg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relaive;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .3%;
+    z-index: 1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .1%;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+
+.nav-item a{
+    color:#fff !important;
+    font-weight: bold;
+    
+}
+.nav-item a:hover{
+    color:#FFA500 !important;
+}
+
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    cursor:auto;
+}
+#buttonfor{
+    border: 1px solid;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 8px 24px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 400;
+
+}
+#buttonfor:hover{
+    background-color:rgba(1,1,1,0.1);
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+}
+.navbar-nav li{
+    padding: 0 2rem 0 0 ;
+}
+.navbar-nav a{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.headerbar{
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    position: relative;
+
+}
+.secdiv{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+.secdiv h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    margin: 0 0 .2px 0;
+}
+
+.thirtdiv h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+    line-height: 3rem;
+    cursor:auto;
+}
+.thirtdiv h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+@media(max-width:768px){
+    .secdiv h1{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    .thirtdiv h3{
+        font-size: 1.5rem;
+    }
+    .navbar-toggler{
+        border-color: white;
+        border-width: 0.1rem;
+    }
+}
+
+/*........................start social networks................................*/
+.main_header{
+    width:100%;
+    height:auto;
+    margin:100px 0;
+    text-align: center;
+}
+.main_header .cards{
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.cards h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+.cards p{
+    margin: 0 0 0 0;
+    letter-spacing: 3px;
+}
+.face{
+    background-color:rgb(0, 128, 255);
+    color:#fff;
+    width:3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+}
+.insta{
+    background-color:rgb(255, 0, 0);
+    color:#fff;
+    width: 3rem;
+    border-radius: 10px;
+}
+.cards:hover{
+    background-color: rgb(240, 240, 245);
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+
+/*........................end social networks................................*/
+
+
+/*........................start about us page................................*/
+
+.spa{
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'New Tegomin', serif;
+    font-weight: bold;
+}
+/*........................coding skil start................................*/
+
+.myskils{
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.myskils h2{
+    font-size: 2.3rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.myskils p{
+    font-size: 1.3rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+.myskils h3{
+    color:#2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:2rem;
+}
+.progress{
+    height: 0.9rem;
+    background-color:#fff;
+}
+.service-icon{
+    display: flex;
+    align-items: center;
+    padding-left: 1.6rem;
+   color: #4EA6E1 ;
+}
+.about-div{
+    margin: 1rem  0 ;
+    margin-top: 2rem;
+}
+.about-div h2{
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color:red;
+
+}
+.about-div p{
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1rem;
+
+}
+.fa-css3-alt{
+    color: #34C441;
+}
+.service-icon:hover{
+    box-shadow: 0px 0px 20px 3px rgba(7, 17, 73, 0.3);
+    transform: translateY(2px);
+    cursor: pointer;
+    background-color: rgba(221, 223, 233, 0.3);
+}
+.fa-js-square{
+    color: #8E8C0A;
+    border-radius: 50px;
+}
+.fa-node-js{
+    color: #CF2D13;
+}
+/*........................coding skil end................................*/
+
+
+
+/*........................end about us page...............................*/
+
+/*........................start my project page................................*/
+
+.headerproject{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(66, 6, 53, 0.349), rgba(1, 8, 27, 0.26)),url('../immage/project1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   clip-path:polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relaive;
+}
+.headerproject:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .3%;
+    z-index: 1;
+    background: linear-gradient(to right, #232425 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.projects h1{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+    align-items: center;
+
+}
+.projects{
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+.myproject{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    text-align: center;
+    background-size: 20rem 60px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+    padding: 50px !important;
+}
+.innerrow{
+    height:8rem;
+    border: 1px solid;
+}
+.innerrow:hover{
+    transform: translateX(2px);
+    cursor: pointer;
+}
+.rowone i{
+    width: 100%;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color:#fff;
+  font-weight: bold;
+  background-color: rgba(27, 25, 25, 0.9);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 3rem;
+}
+/*.container-row{
+    height: 20rem;
+    width: 50rem;
+    background-color: red;
+    z-index: 6;
+    position: relative;
+}
+.menu{
+    
+   color:#fff;
+   margin: 10% 20%;
+   position:fixed;
+}*/
+
+/*........................end my project page................................/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --main-bg :#1e272e;
+    --main-color:#0097e6;
+}
+
+html{
+    font-size: 80.5%;
+}
+body{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.main_menu{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.navbar{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    border-radius: 20px;
+}
+.navbar .navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+    font-family:Signika;
+    
+}
+.navbar-toggler{
+    margin: 0 6px 0 0;
+}
+.fab{
+    color:#000;
+}
+.navbar a{
+    color: var(--main-color);
+}
+
+.navbar-toggler{
+    background-color:  rgba(0, 0, 0, 0.2);
+}
+.navbar li{
+    margin-left: 3rem;
+   
+}
+.navbar li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color:white;
+}
+.fa-medium-m{
+    transition: all linear;
+    animation: rot 10s linear infinite;
+    color: var(--main-bg);
+    animation-direction: alternate;
+}
+.btn{
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.01);
+    outline-color: white;
+    border-radius: 5px;
+    padding: 1px, 0, 1px, 1px;
+    margin-left: 2rem;
+    line-height: 25px;
+    border-style: 1px; 
+     
+}
+
+.btn:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+    text-transform: uppercase; 
+    box-shadow: 0 8px 16px 0 #000;
+}
+.left-header{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:#fff;
+    margin-top: 4rem;
+    border-radius: 100rem;  
+    box-shadow: 0px 0px 11px 0px #000;
+    border-top-left-radius:13rem;
+        
+}
+/*.left-header:hover{
+    background-color: red;
+}
+.left-header h1{
+    font-size: 3rem;
+    font-family: Oswald;
+    font-weight: bold;
+    margin-left: 0rem;
+}
+.left-header p{
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
+    text-transform: capitalize;
+}
+.left-header .color{
+    color:#6495ED;
+    font-size: 24px;
+    font-weight: bold;
+}
+.left-header .color1{
+    color:green;
+    font-size: 2rem;
+}
+.left-header button{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    margin: 10px 0 0 5rem;
+    box-shadow: 0 2px 6px 0px #000;
+    outline:none;
+}
+.left-header button:hover{
+    text-transform: uppercase;
+}
+.left-header h2{
+    font-size: 14px;
+    padding: 0 0 12px 0; 
+    text-transform: capitalize;
+       
+}
+.right-header{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+#tophed{
+    text-align: center;
+    padding:3rem 0 3rem 0;
+    text-transform: uppercase;
+    font-family: Fjalla One;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+
+.imgsetting{
+    border-radius: 50%;
+    height:100px;
+    width: 100px;
+}
+.fab{
+    margin-top: 2rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+}
+.rowsetting h2{
+    font-family: Fira Sans;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+.rowsetting .imgsetting{
+    margin-left: 7rem;
+}
+.rowsetting p{
+    margin:0;
+    padding:2rem 0 2rem 0;
+}
+#thirdh{
+    margin-left: 8rem;
+}
+
+@media(max-width:768px){
+    #tophed{
+        font-size: 2rem;
+    }
+    .rowsetting .imgsetting{
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+    .rowsetting h2{
+        margin-left: 5rem;
+    }
+    #thirdh{
+        margin-left: 6.8rem ;
+    }
+}
+
+
+@keyframes rot {
+    0%{
+        transform: rotate(-50deg);
+    }
+    60%{
+        transform: rotate(50deg);
+    }
+
+    from{
+        padding-left: 20px;
+    }
+    to{
+        padding-right: 20px;
+    }
+    
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 3rem;
+    line-height: 15px;
+    
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color:#fff;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .row{
+    margin-left: 12rem;
+}
+.footerdiv #para{
+    font-size: 1.5rem;
+   line-height: 2rem;
+   margin-left: -5rem;
+}
+.container h3{
+    color: #fff;
+    margin-top: 2rem;
+    padding: 0 3rem 0 0;
+}
+.container .row .footerdiv{
+    margin-right: 6rem;
+}
+
+
+.row .footerdiv li{
+    padding: 2px;
+}
+.row .footerdiv a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.carousel-inner{
+    text-align:center;
+    position: relative;
+    height: 400px;
+    margin-top: 3rem;
+
+}
+
+.main-div{
+    margin: 0;
+    margin-top: 3rem;
+}
+.main-div .main .mix{
+    margin-left: 5rem;
+    margin-right: 2rem;
+   margin-bottom: 3rem;
+    margin-left: 2rem;
+    padding: 2rem 4rem 3rem 4rem;
+    height:20rem;
+
+}
+
+.main-div .main .mix .leftside{
+    background-color: dimgray;
+    margin-left: 2rem;
+
+}
+.main-div .main .mix .middle{
+    background-color: dimgray;
+    margin-left: 2rem;
+
+}
+*/
