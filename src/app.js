@@ -6,25 +6,27 @@ const port = process.env.PORT || 3000 ;
 
 const static_path = path.join(__dirname, "../public");
 
+
+app.set('view engine', 'hbs');
 app.use(express.static(static_path));
 
 
 //routing
 app.get("/", (req, res)=>{
-    res.send("welcome to Rajesh channel");
+    res.render("index");
 })
 app.get("/project", (req, res) =>{
-    res.send("welcome to Rajesh projectpage");
+    res.render("project");
 })
 app.get("/about", (req, res) =>{
-    res.send("welcome to Rajesh aboutpage");
+    res.render("about");
 })
 app.get("/login", (req, res) =>{
-    res.send("welcome to Rajesh loginpage");
+    res.render("login");
 })
 
 app.get("*", (req, res) =>{
-    res.send("oops! 404 ERROR PAGE");
+    res.render("errorpage");
 })
 
 app.listen(port, ()=>{
