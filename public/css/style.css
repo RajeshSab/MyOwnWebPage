@@ -85,6 +85,7 @@ p{
 }
 .navbar-nav li{
     padding: 0 2rem 0 0 ;
+    color:red;
 }
 .navbar-nav a{
     font-family: 'Merriweather Sans', sans-serif;
@@ -304,25 +305,8 @@ p{
     z-index: 1;
     background: linear-gradient(to right, #232425 0%, #3ccdbb 0%, #16c9f6 100%);
 }
-.thirtdivproject{
-    width: 20%;
-    margin-left:37.9rem;
-    height: 20rem;
-    position: relative;
-    border-radius: 100px 100px 100px;
-}
-.thirtdivproject img{
-    height:10.5rem;
-    width: 100%;
-}
-@media(max-width:768px){
-    .thirtdivproject{
-        width:15rem;
-        height:10rem;
-        margin-left:4.2rem;
-        align-items: center;
-    }
-}
+
+
 .projects h1{
     width:100%;
     display: flex;
