@@ -36,7 +36,7 @@
                             <a class="nav-link" href="#">about me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="buttonfor" href="#">login</a>
+                            <a class="nav-link" id="buttonfor" href="/login">login</a>
                         </li>
                     </ul>
 
@@ -211,21 +211,29 @@
     </section>
     <!--.........................coading skil end................................-->
     <!---------------------------------carasol efect start---------------------------------------------->
-    <section class="happyclients">
+    <section class="happyclients p-5">
         <div class="container headings text-center">
-            <h1 class="text-center font-weight-bold">Happy client</h1>
+            <h1 class="text-center font-weight-bold">Happy Client Comments</h1><i class="far fa-smile-beam"></i>
         </div>
-        <div class="container">
+        <div class="container back">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12">
-                                <div class="box">
-                                    <a href="#"><img src="immage/hotel.jfif"></a>
-                                    <p class="m-4">Video provides a powerful way to help you prove your point. When you click 
-                                        Online Video, you can paste in the embed code for the video you want to</p>
-                                        <h1>Rajesh sabat</h1>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="box m-4 text-center">
+                                    <h3>Many YouTubers make their Channel Description about them. For example, their description might sound something like: “My channel is all about my favorite TV shows. I tell you what I think of each and every episode”.</h3>
+                                </div>
+                            </div>
+
+                               
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="box m-4 text-center">
+                                    <h3>Many YouTubers make their Channel Description about them. For example, their description might sound something like: “My channel is all about my favorite TV shows. I tell you what I think of each and every episode”.</h3>
                                 </div>
                             </div>
                              
@@ -233,25 +241,9 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12">
-                                <div class="box">
-                                    <a href="#"><img src="immage/hotel.jfif"></a>
-                                    <p class="m-4">Video provides a powerful way to help you prove your point. When you click 
-                                        Online Video, you can paste in the embed code for the video you want to</p>
-                                        <h1>Rajesh sabat</h1>
-                                </div>
-                            </div>
-                             
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-12">
-                                <div class="box">
-                                    <a href="#"><img src="immage/hotel.jfif"></a>
-                                    <p class="m-4">Video provides a powerful way to help you prove your point. When you click 
-                                        Online Video, you can paste in the embed code for the video you want to</p>
-                                        <h1>Rajesh sabat</h1>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="box m-4 text-center">
+                                    <h3>Many YouTubers make their Channel Description about them. For example, their description might sound something like: “My channel is all about my favorite TV shows. I tell you what I think of each and every episode”.</h3>
                                 </div>
                             </div>
                              
@@ -269,14 +261,84 @@
             </div>
         </div>
     </section>
-    <!---------------------------------carasol efect end---------------------------------------------->
 
+    <!---------------------------------carasol efect end---------------------------------------------->
+<!-------------------------------------footer start------------------------------------------>>
+
+
+<footer class="footersection" id="footerdiv">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+<div class="mt-5 text-center">
+    <p>This page is made by rajesh</p>
+</div>
+    </div>
+
+    <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
+
+</footer>
+<!----------------------------------footer end--------------------------------------->
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        mybutton=document.getElementById("myBtn");
+        window.scroll = function(){
+            scroolFunction()
+        };
+
+        function scroolFunction(){
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                mybutton.style.display = "none";
+            }else{
+                mybutton.style.display = "block";
+            }
+        }
+
+//when user click this button then scrool top of the document
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>

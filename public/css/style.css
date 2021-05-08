@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin:0;
     padding: 0;
@@ -277,6 +280,64 @@ p{
 .fa-node-js{
     color: #CF2D13;
 }
+.carousel-inner{
+    background-color: rgba(66, 6, 53, 0.349);
+    border-radius: 50px;
+    border:none;
+    box-shadow: 0px 10px 8px 3px rgba(0,0,0,0.3);
+}
+.carousel-item{
+    background-color: #fff;
+    border:none;
+}
+.carousel-item h3{
+    color:black;
+}
+.happyclients h1{
+   margin:1rem 0;
+   color:red;
+}
+.happyclients .far{
+    font-size: 4rem;
+    background-color: yellow;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
+    box-shadow: 0px 10px 8px 3px rgba(0,0,0,0.3);;
+    margin:1rem 0;
+    color:#693125 ;
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    animation-direction: alternate;
+}
+.happyclients{
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+@keyframes rot{
+ 20%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(200deg);
+    }
+}
+@media(max-width:768px){
+    .happyclients h1{
+        font-size: 2rem;
+        margin: 4px 0;
+        letter-spacing: 3px;
+    }
+    .carousel-inner{
+       padding:4px;
+       border-radius: 50px;
+    }
+    .carousel-item h3{
+        font-size: 14px;
+       text-align: center;
+    }
+}
 /*........................coding skil end................................*/
 
 
@@ -347,6 +408,11 @@ p{
   text-align: center;
   line-height: 3rem;
 }
+.red{
+    height: 20px;
+    width: 100%;
+    background-color: red;
+}
 /*.container-row{
     height: 20rem;
     width: 50rem;
@@ -361,11 +427,46 @@ p{
    position:fixed;
 }*/
 
-/*........................end my project page................................/
+/*........................end my project page................................*/
 
 
 
+/*.........................footer section start................................*/
+.footersection{
+    width: 100%;
+    height:auto;
+    padding: 70px 0 20px 0;
+    background: #0C090A;
+    position: relative;
+}
+.footersection p{
+    color:#fff;
+    text-align: center;
+}
+.footersection h3{
+    color:#fff;
+    text-align: center;
+    text-transform:uppercase;
+    margin-bottom: 23px;
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgb(250, 251, 252);
+}
+#myBtn{
+    display:block;
+    position: fixed;
+    bottom: 20px;
+    right:40px;
+    z-index: 1;
+    border: none;
+    color:#000;
+    background: white;
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+/*.........................footer section end................................*/
 
 
 

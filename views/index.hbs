@@ -93,7 +93,56 @@
 </div>
 
 <!--.........................end social networks................................-->
+<!--.........................footer section start................................-->
 
+
+<footer class="footersection" id="footerdiv">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-12 footer-div">
+                <div>
+                    <h3>about my site</h3>
+                    <p>my name is rajesh kumar sabat and i am from odissa
+                        and my village name is sikirimy name is rajesh kumar 
+                        sabat and i am from odissa and my village name is sikiri
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+<div class="mt-5 text-center">
+    <p>This page is made by rajesh</p>
+</div>
+    </div>
+
+    <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
+
+</footer>
+
+<!--.........................footer section end................................-->
 
 
 
@@ -101,6 +150,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        mybutton=document.getElementById("myBtn");
+        window.scroll = function(){
+            scroolFunction()
+        };
+
+        function scroolFunction(){
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                mybutton.style.display = "none";
+            }else{
+                mybutton.style.display = "block";
+            }
+        }
+
+//when user click this button then scrool top of the document
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>

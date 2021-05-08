@@ -12,17 +12,17 @@ app.use(express.static(static_path));
 
 
 //routing
-app.get("/", (req, res)=>{
-    res.render("index");
+app.get("/", (req, res) =>{
+    res.render("index.hbs");
 })
 app.get("/project", (req, res) =>{
-    res.render("project");
+    res.render("project.hbs");
 })
 app.get("/about", (req, res) =>{
-    res.render("about");
+    res.render("about.hbs");
 })
 app.get("/login", (req, res) =>{
-    res.render("login");
+    res.render("login.hbs");
 })
 
 app.get("*", (req, res) =>{
