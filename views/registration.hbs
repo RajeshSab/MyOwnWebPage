@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <h2 class="text-center text">M page</h2>
+
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,registration form start''''''''''''''''''''''''''''''''''''''''''''-->
+    <div class="background">
+        <h1 class="text-center firsttag">registration form</h1>
+        <section class="boxregistration">
+            <div class="container">
+
+                <div class="center-box col-lg-12 col-md-12 col-12">
+                    <form action="/register" method="POST">
+                        <div class="row register-form">
+                            <div class="col-md-6 colu">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name *" autocomplete="off" value=""
+                                        name="firstname" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email*" autocomplete="off" value=""
+                                        name="email" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="phone" autocomplete="off" class="form-control"
+                                        placeholder="Your Phone *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" autocomplete="off" value=""
+                                        name="password" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 colu">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name *" autocomplete="off" value=""
+                                        name="lastname" />
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span>male</span>
+                                        </label>
+
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="male">
+                                            <span>female</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter Your Age *" value=""
+                                        name="age" />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="confirm password *"
+                                        value="" name="confirmpassword" />
+                                </div>
+
+
+
+
+                            </div>
+                            
+                        </div>
+                        <input type="submit" class="btnRegister" value="Register" />
+
+                    </form>
+                    
+
+                </div>
+                
+               
+            </div>
+
+        </section>
+        <h6> Already have an account? <a class="anchore">signin</a></h6>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

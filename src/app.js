@@ -21,6 +21,9 @@ app.get("/project", (req, res) =>{
 app.get("/about", (req, res) =>{
     res.render("about.hbs");
 })
+app.get("/registration", (req, res) =>{
+    res.render("registration.hbs");
+})
 app.get("/login", (req, res) =>{
     res.render("login.hbs");
 })
