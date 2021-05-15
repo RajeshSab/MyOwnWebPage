@@ -6,7 +6,7 @@ require("./db/conn")
 const Registerform = require("./model/registres");
 
 
-const port = process.env.PORT || 3000 ;
+const port = process.env.PORT || 1000 ;
 
 
 const static_path = path.join(__dirname, "../public");
@@ -73,7 +73,7 @@ app.post("/registration", async(req, res) =>{
 
             })
             const registred = await registrationClient.save();
-            res.status(201).render("project")
+            res.status(201).render("index")
         }else{
             res.send(`password not match`);
         }
