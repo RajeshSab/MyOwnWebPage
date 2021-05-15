@@ -569,7 +569,7 @@ p{
       background-color: #F4F6F6;
       height:48rem;
   }
-  .cont{
+  .contat{
       
       margin-top: 1px !important;
 
@@ -667,7 +667,7 @@ p{
 }
 .cont{
     width: 100px;
-        background-color: Crimson;  
+        background-color: green;  
         border-radius: 5px;
         text-align: center;
         color: white;
