@@ -469,6 +469,11 @@ p{
 /*.........................footer section end................................*/
 
 /*.........................registration form styling start................................*/
+
+.codepara{
+    color:#F39C12;
+    font-weight: bold;
+}
 .firsttag{
     letter-spacing: 3px;
     font-weight: bold;
@@ -478,7 +483,7 @@ p{
 }
 .text{
     font-size: 3rem;
-    padding: 2rem;
+    padding: 0;
     margin-top: 2px;
     font-family: 'Patrick Hand', cursive;
     color:#3498DB;
@@ -534,16 +539,22 @@ p{
         font-size: 20px;
     }
     .register-form{
-        margin-top:3.9rem;
+        margin-top:2.9rem;
+        padding: 0;
     }
   .boxregistration{
      align-items: center;
      width: 90%;
+     height:35rem;
      margin: 1rem 1rem 4rem 1rem;
   }
+  .colu{
+   
+      margin-top: 6px !important;
+  }
   .btnRegister{
-     margin-bottom: 2px;
-    margin:4px 0;
+     margin-bottom: 7px;
+    margin:5px 0;
   }
   .background{
       margin-bottom: 21px;
@@ -551,376 +562,236 @@ p{
   .background h6{
       margin:0;
   }
+  .form-login .radio .male{
+      font-size: 1rem;
+  }
+  .background{
+      background-color: #F4F6F6;
+      height:48rem;
+  }
+  .cont{
+      
+      margin-top: 1px !important;
+
+  }
+  .center-box{
+    
+      margin-top: 2px !important;
+  }
 } 
 /*.........................registration form styling end................................*/
+ 
 
 
+/*--------------------------login form start------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-
-}
-
-:root{
-    --main-bg :#1e272e;
-    --main-color:#0097e6;
-}
-
-html{
-    font-size: 80.5%;
-}
-body{
-    height: 130vh;
+.left-div{
+    height: auto;
+    width: 20rem !important;
+    background-color:#fff;
     display: flex;
     flex-direction: column;
-}
-.row{
-    margin: 0;
-}
-.main_menu{
-    background-color: rgba(0, 0, 0, 0.1);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-}
-
-.navbar{
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
+    justify-self: center;
+    margin:3px 0 2rem 0;
+    padding:1rem;
+    border:1px solid;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(128, 139, 150);
 }
-.navbar .navbar-brand{
-    font-weight: bold;
-    font-size: 25px;
-    font-family:Signika;
+.right-div{
+    height: 20rem;
+    width: 30rem !important;
+    background-color: #E5E7E9;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin:6rem 0 2rem 8rem;
+}
+
+.form-login{
+    margin-top: 0rem;
+    padding:0.2rem;
+}
+.form-login label{
+    font-size: 2rem;
     
 }
-.navbar-toggler{
-    margin: 0 6px 0 0;
-}
-.fab{
-    color:#000;
-}
-.navbar a{
-    color: var(--main-color);
+.backgroundlogin{
+    padding:2rem;
+    background-color: #E5E7E9;
+    margin:1rem 4rem;
 }
 
-.navbar-toggler{
-    background-color:  rgba(0, 0, 0, 0.2);
+.textboxlogin{
+    width: 100%;
+    line-height: 2rem;
+    border: 1px solid;
 }
-.navbar li{
-    margin-left: 3rem;
+.icon{
+    padding:1rem;
+    color:#E67E22;
    
 }
-.navbar li a{
-    font-size: 1.5rem;
-    font-weight: bold;
+.textboxlogin:hover{
+    background-color: #F7F9F9 ;
+    border-color: #85929E;
+    box-shadow: 2px 2px 13px 2px #ABB2B9 ;
 }
-
-.navbar a:hover{
-    color:white;
-}
-.fa-medium-m{
-    transition: all linear;
-    animation: rot 10s linear infinite;
-    color: var(--main-bg);
-    animation-direction: alternate;
-}
-.btn{
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.01);
-    outline-color: white;
-    border-radius: 5px;
-    padding: 1px, 0, 1px, 1px;
-    margin-left: 2rem;
-    line-height: 25px;
-    border-style: 1px; 
-     
-}
-
-.btn:hover{
-    background-color:rgba(0, 0, 0, 0.3);
-    text-transform: uppercase; 
-    box-shadow: 0 8px 16px 0 #000;
-}
-.left-header{
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color:#fff;
-    margin-top: 4rem;
-    border-radius: 100rem;  
-    box-shadow: 0px 0px 11px 0px #000;
-    border-top-left-radius:13rem;
-        
-}
-/*.left-header:hover{
-    background-color: red;
-}
-.left-header h1{
-    font-size: 3rem;
-    font-family: Oswald;
-    font-weight: bold;
-    margin-left: 0rem;
-}
-.left-header p{
-    font-size: 1rem;
-    margin: 1rem 0 2rem 0;
-    text-transform: capitalize;
-}
-.left-header .color{
-    color:#6495ED;
-    font-size: 24px;
-    font-weight: bold;
-}
-.left-header .color1{
-    color:green;
-    font-size: 2rem;
-}
-.left-header button{
-    border:none;
-    padding:0.8rem 1.8rem;
-    font-size: 1.4rem;
-    border-radius: 2rem;
-    margin: 10px 0 0 5rem;
-    box-shadow: 0 2px 6px 0px #000;
-    outline:none;
-}
-.left-header button:hover{
-    text-transform: uppercase;
-}
-.left-header h2{
-    font-size: 14px;
-    padding: 0 0 12px 0; 
-    text-transform: capitalize;
-       
-}
-.right-header{
-    height: 35rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 3rem;
-}
-
-#tophed{
-    text-align: center;
-    padding:3rem 0 3rem 0;
-    text-transform: uppercase;
-    font-family: Fjalla One;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-
-
-.imgsetting{
-    border-radius: 50%;
-    height:100px;
-    width: 100px;
-}
-.fab{
-    margin-top: 2rem;
-    margin-left: 1.8rem;
-    cursor: pointer;
-}
-.rowsetting h2{
-    font-family: Fira Sans;
-    margin-left: 6rem;
-    margin-top: 1rem;
-    font-size: 30px;
-    font-weight: bold;
-}
-.rowsetting .imgsetting{
-    margin-left: 7rem;
-}
-.rowsetting p{
-    margin:0;
-    padding:2rem 0 2rem 0;
-}
-#thirdh{
-    margin-left: 8rem;
-}
-
-@media(max-width:768px){
-    #tophed{
-        font-size: 2rem;
-    }
-    .rowsetting .imgsetting{
-        margin-left: 6rem;
-        margin-top: 1rem;
-    }
-    .rowsetting h2{
-        margin-left: 5rem;
-    }
-    #thirdh{
-        margin-left: 6.8rem ;
-    }
-}
-
-
-@keyframes rot {
-    0%{
-        transform: rotate(-50deg);
-    }
-    60%{
-        transform: rotate(50deg);
-    }
-
-    from{
-        padding-left: 20px;
-    }
-    to{
-        padding-right: 20px;
-    }
-    
-}
-
-
-
-footer{
+.btnlogin{
     width: 100%;
-    background-color: black;
-    margin-top: 3rem;
-    line-height: 15px;
-    
-}
-
-footer p{
-    margin: 0;
+    border: none;
+    color: white;
+    padding: 1rem 0;
+    margin: 9px 0;
     text-align: center;
-    color:#fff;
-    line-height: 5rem;
-    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    line-height: 12px;
 }
-.container{
+.check{
+    padding:2rem;
+}
+.btncreateacc{
+    width: 100%;
+    background-color: #fff;
+    border:2px solid;
+    border-color: #3498DB;
+    color: #3498DB;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin:9px 0px 9px 0px;
+    border-radius: 50px;
+}
+.cancelbtn{
+  
+        background-color: Crimson;  
+        border-radius: 5px;
+        color: white;
+        padding: .5em;
+        text-decoration: none;
+        margin: 1rem auto;
+}
+.cancelbtn:hover{
+    background-color:#212F3D ;
+    color:white;
+    transform: translateY(4px);
+    outline: none;
+}
+.middle-div{
+    height: 20rem;
+    background-color: red;
+    padding: 2rem;
+    margin:7rem 3rem 3rem 4rem;
+    width: 30rem;
+}
+.item{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.container .row{
-    margin-left: 12rem;
+.user{
+    font-size: 1.2rem !important;
 }
-.footerdiv #para{
-    font-size: 1.5rem;
-   line-height: 2rem;
-   margin-left: -5rem;
+@media(max-width:768px){
+    .left-div{
+        height:auto;
+
+    }
+    .right-div{
+        margin-left: 1.8px;
+    }
+    .backgroundlogin{
+        margin:0;
+    }
+   .user{
+       font-size: 25px !important;
+       padding: 2px;
+
+   }
+   .btncreateacc{
+       width: 100%;
+       margin:3px 1px 3px 7px;
+   }
+   .icon{
+       font-size: 3px;
+       padding: 0;
+   }
+   .textboxlogin{
+       width: 100% !important;
+       padding:2px;
+       margin:3px 0px !important;
+   }
+   .left-div{
+       padding: 0;
+   }
 }
-.container h3{
-    color: #fff;
-    margin-top: 2rem;
-    padding: 0 3rem 0 0;
-}
-.container .row .footerdiv{
-    margin-right: 6rem;
-}
+/*---------------------------login form end---------------------------------*/
 
 
-.row .footerdiv li{
-    padding: 2px;
-}
-.row .footerdiv a{
-    font-size: 1.5rem;
-    text-decoration: none;
-}
 
-.carousel-inner{
-    text-align:center;
-    position: relative;
-    height: 400px;
-    margin-top: 3rem;
 
-}
 
-.main-div{
-    margin: 0;
-    margin-top: 3rem;
-}
-.main-div .main .mix{
-    margin-left: 5rem;
-    margin-right: 2rem;
-   margin-bottom: 3rem;
-    margin-left: 2rem;
-    padding: 2rem 4rem 3rem 4rem;
-    height:20rem;
 
-}
 
-.main-div .main .mix .leftside{
-    background-color: dimgray;
-    margin-left: 2rem;
 
-}
-.main-div .main .mix .middle{
-    background-color: dimgray;
-    margin-left: 2rem;
 
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
