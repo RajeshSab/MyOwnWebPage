@@ -665,24 +665,25 @@ p{
     margin:9px 0px 9px 0px;
     border-radius: 50px;
 }
-.cancelbtn{
-  
+.cont{
+    width: 100px;
         background-color: Crimson;  
         border-radius: 5px;
+        text-align: center;
         color: white;
-        padding: .5em;
+        padding: .5rem;
         text-decoration: none;
-        margin: 1rem auto;
+        margin: 3rem 0 10px 0 ;
 }
-.cancelbtn:hover{
+.cont:hover{
     background-color:#212F3D ;
-    color:white;
+    color:rgb(240, 227, 227);
     transform: translateY(4px);
     outline: none;
 }
 .middle-div{
     height: 20rem;
-    background-color: red;
+
     padding: 2rem;
     margin:7rem 3rem 3rem 4rem;
     width: 30rem;
@@ -698,8 +699,11 @@ p{
 }
 @media(max-width:768px){
     .left-div{
-        height:auto;
-
+        height: 23rem;
+    }
+    .cont{
+        margin:1rem 10px;
+        line-height: 3px;
     }
     .right-div{
         margin-left: 1.8px;

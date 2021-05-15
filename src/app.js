@@ -53,7 +53,6 @@ app.get("*", (req, res) =>{
 
 app.post("/registration", async(req, res) =>{
     try {
-    
         const password = req.body.password;
         const conpassword = req.body.confirmpassword;
 
@@ -82,19 +81,6 @@ app.post("/registration", async(req, res) =>{
         res.status(400).send(error);
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 app.listen(port, ()=>{
